@@ -6,6 +6,10 @@ accounts::users:
       - sudo
     uid: 10001
     gid: 10001
-    ssh-keys: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDQIv5vgiHfpnK4MV7uWCVkspRCGt6yfZRNsB2b5GiZ8xC5wklfxiPE2ML7kBiOWHG/9Xh5JS92p7qoU0e2VkYfmlmUzsmQxmr40iHu3tsvfO5Hje4MbIObNQaBp8XVEZejKYJjzz1ayAuInhSAagH4sKG5E1vV2RUQT2T6UyuoGDGlaVbF4Uwh/6Fs0GhFqRAyrAd4V1EYCdnqALBn6/M2Ka8/sg/Kg8tHO4hH8kFbs53EGMBPyXtCbhghiCLHEiZqddXONlAwvtKY5/LNzpxSKYw+Doo9CbM7tVPpQyg9dfm8kT/Nakgo3Lu3t/g3c3RQSAGyEiSwqCuw3UpXz3ON diego@badmotherfucker
+    ssh-keys: AAAAB3NzaC1yc2EAAAADAQABAAABAQDQIv5vgiHfpnK4MV7uWCVkspRCGt6yfZRNsB2b5GiZ8xC5wklfxiPE2ML7kBiOWHG/9Xh5JS92p7qoU0e2VkYfmlmUzsmQxmr40iHu3tsvfO5Hje4MbIObNQaBp8XVEZejKYJjzz1ayAuInhSAagH4sKG5E1vV2RUQT2T6UyuoGDGlaVbF4Uwh/6Fs0GhFqRAyrAd4V1EYCdnqALBn6/M2Ka8/sg/Kg8tHO4hH8kFbs53EGMBPyXtCbhghiCLHEiZqddXONlAwvtKY5/LNzpxSKYw+Doo9CbM7tVPpQyg9dfm8kT/Nakgo3Lu3t/g3c3RQSAGyEiSwqCuw3UpXz3ON diego@badmotherfucker
+  wordpress:
+    comment: 'Wordpress deployment user'
+    uid: 10002
+    gid: 10002
 
 ssh::permit_root_login: 'no'
