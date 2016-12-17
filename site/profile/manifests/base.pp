@@ -1,6 +1,6 @@
 class profile::base {
 
-  include ssh, accounts, ntp, sudo
+  include ssh
 
   create_resources('accounts::user', hiera_hash('accounts::users'))
 
