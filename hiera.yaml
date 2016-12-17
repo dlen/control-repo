@@ -1,5 +1,5 @@
 version: 4
-datadir: data
+datadir: hieradata
 hierarchy:
   - name: "Nodes"
     backend: yaml
