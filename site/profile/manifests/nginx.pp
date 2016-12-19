@@ -2,6 +2,18 @@ class profile::nginx {
 
   include ::nginx
 
+  file{'/srv/test-nro':
+    ensure => 'directory',
+    mode   => '0755',
+    owner  => 'wordpress',
+    group  => 'wordpress';
+  '/srv/test-nro/logs':
+    ensure => 'directory',
+    mode   => '0755',
+    owner  => 'wordpress',
+    group  => 'wordpress';
+  }
+
   nginx::resource::vhost{'test':
     ensure      => present,
     listen_port => '80',
