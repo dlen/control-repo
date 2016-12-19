@@ -2,6 +2,6 @@
 class role::cache{
 
   contain profile::base
-  contain profile::varnish
+  contain profile::caching_engine
 
 }
