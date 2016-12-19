@@ -7,7 +7,8 @@ class profile::nginx {
     listen_port => '80 default_server',
     server_name => 'test.cloud',
     access_log  => '/srv/test-nro/logs/access.log',
-    error_log   => '/srv/test-nro/logs/error.log'
+    error_log   => '/srv/test-nro/logs/error.log',
+    www_root    => '/srv/test-nro/html
   }
 
   nginx::resource::location{'php':
