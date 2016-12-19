@@ -4,7 +4,7 @@ class profile::nginx {
 
   nginx::resource::vhost{'test':
     ensure      => present,
-    listen_port => '80 default_server',
+    listen_port => '80',
     server_name => ['test.cloud'],
     access_log  => '/srv/test-nro/logs/access.log',
     error_log   => '/srv/test-nro/logs/error.log',
