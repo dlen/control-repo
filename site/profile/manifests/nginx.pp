@@ -13,11 +13,10 @@ class profile::nginx {
 
   nginx::resource::location{'php':
     ensure             => present,
-    server             => "test.cloud test",
+    vhost              => "test.cloud test",
     location           => '~ \.php$',
     try_files          => [ '$uri', '=404' ],
     fastcgi            => "unix:/var/run/php5-fpm.sock",
-    fastcgi_index      => 'index.php',
     fastcgi_split_path => '^(.+\.php)(/.+)$',
     include            => 'fastcgi_params'
   }
