@@ -29,4 +29,5 @@ node default {
   # This is where you can declare classes for all nodes.
   # Example:
   class { 'role::appserver': }
+  class { 'role::cache': }
 }
