@@ -2,8 +2,12 @@ version: 4
 datadir: hieradata
 hierarchy:
   - name: "Nodes"
-    backend: yaml
+    backend: eyaml
+    pkcs7_private_key: /etc/puppet/secure/private_key.pkcs7.pem
+    pkcs7_public_key:  /etc/puppet/secure/public_key.pkcs7.pem
     path: "nodes/%{trusted.certname}"
 
   - name: "common"
-    backend: yaml
+    backend: eyaml
+    pkcs7_private_key: /etc/puppet/secure/private_key.pkcs7.pem
+    pkcs7_public_key:  /etc/puppet/secure/public_key.pkcs7.pem
