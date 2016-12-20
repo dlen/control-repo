@@ -10,4 +10,4 @@ mod 'puppetlabs-apt', '2.3.0'
 mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-stdlib', '4.14.0'
 mod 'maxchk-varnish',
-  :git => 'git@github.com:maxchk/puppet-varnish.git'
+  :git => 'https://github.com/maxchk/puppet-varnish'
