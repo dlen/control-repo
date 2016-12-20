@@ -10,7 +10,7 @@ class profile::mysql{
 		}
   }
 
-  mysql::db { 'test':
+  mysql::db { 'test_database':
     user     => lookup(mysql::test_username),
     password => lookup(mysql::test_password),
     host     => '%',
