@@ -34,3 +34,7 @@ node default {
 node /^database.*/ {
   class { 'role::database': }
 }
+
+node /^cache.*/ {
+  class { 'role::cache': }
+}
