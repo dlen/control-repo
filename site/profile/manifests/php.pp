@@ -7,7 +7,7 @@ class profile::php{
 	}->
 
   class{'::php::repo::redhat':
-    yum_repo => 'remi_70'
+    yum_repo => 'remi_php70'
   }
 
 	class{'::php':
