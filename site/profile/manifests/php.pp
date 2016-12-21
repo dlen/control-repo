@@ -1,15 +1,6 @@
 #
 class profile::php{
 
-	class{'::php::globals':
-		php_version => '7.0',
-	  config_root => '/etc/php/7.0'
-	}->
-
-  class{'::php::repo::redhat':
-    yum_repo => 'remi_php70'
-  }
-
 	class{'::php':
 		manage_repos => true,
     fpm          => true
