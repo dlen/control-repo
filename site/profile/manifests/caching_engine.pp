@@ -13,7 +13,7 @@ class profile::caching_engine{
   $backends = lookup(wordpress::backends)
 
   $backends.each |$backend, $ip| {
-    varnish::backend{ "%{$backend}": host => "%{$ip}", port => '80', probe => 'health_check' }
+    varnish::backend{ "$backend": host => "$ip", port => '80', probe => 'health_check' }
   }
 
   $backend_names = $backends.map |$backend| { $backend[0] }
