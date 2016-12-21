@@ -3,7 +3,7 @@ accounts::users:
   diego:
     comment: 'Diego Lendoiro'
     groups:
-      - sudo
+      - wheel
     uid: '10001'
     gid: '10001'
     sshkeys:
