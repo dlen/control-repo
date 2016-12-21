@@ -6,10 +6,10 @@ wordpress::backends:
 
 varnish::vcl::functions:
   vcl_recv: |
-		if (req.url ~ "wp-admin|wp-login") {
-			return (pass);
-		}
+    if (req.url ~ "wp-admin|wp-login") {
+      return (pass);
+    }
 	vcl_fetch: |
     if (!(req.url ~ "wp-(login|admin)")) {
-    	unset beresp.http.set-cookie;
+      unset beresp.http.set-cookie;
     }
