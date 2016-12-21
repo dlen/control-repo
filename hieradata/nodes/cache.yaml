@@ -9,7 +9,7 @@ varnish::vcl::functions:
     if (req.url ~ "wp-admin|wp-login") {
       return (pass);
     }
-	vcl_fetch: |
+  vcl_fetch: |
     if (!(req.url ~ "wp-(login|admin)")) {
       unset beresp.http.set-cookie;
     }
