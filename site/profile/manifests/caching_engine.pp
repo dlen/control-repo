@@ -1,8 +1,11 @@
 #
 class profile::caching_engine{
 
+  class{'::yum::repo::epel': }->
+
   class{ 'varnish':
-    varnish_listen_port => '80',
+    version              => '4.0',
+    varnish_listen_port  => '80',
     varnish_storage_size => '1G'
   }
 
