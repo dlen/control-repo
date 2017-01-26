@@ -9,6 +9,7 @@ mod 'mayflower-php', '4.0.0-beta1'
 mod 'puppetlabs-apt', '2.3.0'
 mod 'puppetlabs-concat', '2.2.0'
 mod 'puppetlabs-stdlib', '4.14.0'
+mod 'arioch-redis', '1.2.4'
 mod 'maxchk-varnish',
   :git => 'https://github.com/maxchk/puppet-varnish',
   :branch => :develop
