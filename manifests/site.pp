@@ -38,3 +38,7 @@ node /^database.*/ {
 node /^cache.*/ {
   class { 'role::cache': }
 }
+
+node /^nosql.*/ {
+  class { 'role::nosql': }
+}
